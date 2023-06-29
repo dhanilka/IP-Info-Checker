@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h3 {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #999;
+            margin-bottom: 5px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .flag-container {
+            text-align: center;
+        }
+        .flag-container img {
+            max-width: 100px;
+            height: auto;
+        }
+        .bullet-point {
+            color: rgb(40, 156, 1);
+            font-weight: bold;
+            margin-right: 5px;
+
+        }
+          .left-sidebar {
+            float: left;
+            width: 25%;
+            background: #333;
+            /* Add any additional styles for the left sidebar */
+        }
+    </style>
+</head>
+<body>
+    {{!-- <div class="left-sidebar">
+        <!-- Add your Google Ads code snippet here -->
+        <!-- Replace the example code below with your actual Google Ads code -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="your-ad-client-id"
+            data-ad-slot="your-ad-slot-id"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div> --}}
+    <div class="container">
+        <h1>Your IP Details</h1>
+        <br>
+        <div class="flag-container">
+            <p><img src="{{flag}}" alt="Flag"></p>
+        </div>
+        <h3><span class="bullet-point">&#x2022;</span> IP Address: {{ip}}</h3>
+        <p><span class="bullet-point">&#x2022;</span> ISP: {{org}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Continent: {{continent}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Country: {{country}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Zip Code: {{zipCode}}</p>
+        <p><span class="bullet-point">&#x2022;</span> City: {{city}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Timezone: {{timezone}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Latitude: {{latitude}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Longitude: {{longitude}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Currency: {{currencyName}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Country Capital: {{countryCapital}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Phone Code: {{phoneCode}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Languages: {{languages}}</p>
+        <p><span class="bullet-point">&#x2022;</span> Network: {{network}}</p>
+    </div>
+</body>
+</html>
